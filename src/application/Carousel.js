@@ -26,8 +26,7 @@ const SliderData = [
             
         },
         {
-            // Image:
-            // 'https://cdn.metropole.com.au/wp-content/uploads/2022/03/coffee2.jpg',
+         
 
             Image:
             "https://images8.alphacoders.com/831/831931.jpg",

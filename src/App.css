@@ -1,35 +1,95 @@
 .App {
   text-align: center;
-  /* padding: 20px; */
+ background-image: url(../src/imgs/150543-abstract-brown-and-white-diagonal-shiny-lines-background-vector-image.jpg);
+ background-size: cover;
+ background-repeat: no-repeat;
  
-}
+ }
 
 
-.appbar{
-  background-color: rgb(52, 119, 177);
-  /* height: 400px;
-  padding: 0 100px; */
-  
-}
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
   }
 }
+
 .proGrid{
   background-color: rgb(152, 100, 22);
  
 }
 .productPage{
-  /* background-image: url(../src/imgs/coffee-arabica-beans-circle-shape.jpg); */
- 
-  background-color: rgba(36, 23, 6, 0.864);
+  background-image: url(./imgs/150543-abstract-brown-and-white-diagonal-shiny-lines-background-vector-image.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
 
 }
 .grid{
   border-radius: 50px;
   background-color: rgb(221, 127, 11);
 }
+
+
+
+
+.logo{
+   /* width: 50px; */
+  height: 50px; 
+  text-decoration: none;
+  font-size: 24px;
+  font-weight: 600;
+  font-family:"Dancing Script",cursive ;
+  color: rgba(199, 164, 150, 0.992);
+  
+}
+.logo:hover{
+  color: rgba(215, 164, 144, 0.992);
+
+}
+.product{
+  margin-top: 100px;
+z-index: 5;
+background-color: rgba(169, 111, 54, 0.427);
+}
+
+
+.navigation{
+  width: 30%;
+ 
+  
+  display: flex;
+  justify-content: space-between;
+ 
+ 
+  color: rgb(180, 169, 138);
+}
+.navigText{
+  
+  text-transform: uppercase;
+  font-family: 'Hanalei Fill', cursive;
+  font-weight: 600;
+  letter-spacing: 2px;
+  color: inherit;
+  text-decoration: none;
+}
+
+
+.App-header {
+
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+
+
+
+
+
+/* slider style */
 
 
 .singlProduct{
@@ -42,8 +102,7 @@
 .sliderImg{
   position: relative;
   width: 100%;
-  /* height: 10%; */
- 
+
   box-sizing: border-box;
   overflow: hidden;
  
@@ -78,100 +137,6 @@ animation: moveInRight 2s ease-out;
   animation: moveInLeft 2s ease-out;
 }
 
-.logo{
-   /* width: 50px; */
-  height: 50px; 
-  text-decoration: none;
-  font-size: 24px;
-  font-weight: 600;
-  font-family:"Dancing Script",cursive ;
-  color: rgba(199, 164, 150, 0.992);
-  
-}
-.logo:hover{
-  color: rgba(215, 164, 144, 0.992);
-
-}
-.product{
-  margin-top: 100px;
-z-index: 5;
-background-color: rgba(169, 111, 54, 0.427);
-}
-.homePage{
-
-
-  /* margin: 5px auto;  */
-
-   /* padding: 20px;  */
-
-    /* background-image: linear-gradient( 
-    to right bottom,
-     rgba(241, 242, 248, 0.6),
-     rgba(2, 24, 153, 0.6)); */
-
-   
-    /* background-size: cover;
-    background-position: top;
-    clip-path: polygon(0 0 ,100% 0,100% 95%,0 100%);
-    display: flex;
-    align-items: center;
-    justify-content: space-between; */
-
-}
-.video{
-  width: 1500px;
-  height: 1500px;
-}
-
-.navigation{
-  width: 30%;
- 
-  
-  display: flex;
-  justify-content: space-between;
- 
- 
-  color: rgb(180, 169, 138);
-}
-.navigText{
-  
-  text-transform: uppercase;
-  font-family: 'Hanalei Fill', cursive;
-  font-weight: 600;
-  letter-spacing: 2px;
-  color: inherit;
-  text-decoration: none;
-}
-
-
-.App-header {
-  /* background-color: #282c34; */
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-
-
-/* slider style */
-
 .carousel{
   box-sizing: border-box;
   overflow: hidden;
@@ -189,14 +154,6 @@ width: 100%;
   align-items: center;
   justify-content: center;
   width: 90%;
-  /* height: 400px; */
-  
-  /* background-image: linear-gradient(
-    to right bottom,
-     rgba(236, 238, 243, 0.9),
-     rgba(3, 116, 253, 0.9)); */
-
-
   color: black;
   position: relative;
  
@@ -222,7 +179,9 @@ width: 100%;
 
 .singlproductpg{
   padding: 150px;
-  background-color: rgb(113, 84, 30);
+ background-image: url(../src/imgs/150543-abstract-brown-and-white-diagonal-shiny-lines-background-vector-image.jpg);
+ background-size: cover;
+ background-repeat: no-repeat;
 }
 @keyframes moveInLeft{
   0%{
@@ -279,7 +238,7 @@ padding: 100px;
 }
 .hmproducts{
   padding: 20px;
-  margin-top: 500px;
+  margin-top: 150px;
   margin-left: 100px;
 }
 .registerHM{
@@ -417,13 +376,44 @@ z-index: 5;
 .blog3{
   width: 100%;
   height: 700px;
-margin-top: -300px;
-  /* box-sizing: border-box;
-  overflow: hidden; */
+margin-top: -450px;
+margin-left: -220px;
+
+}
+.videob{
+  display: flex;
+  
+}
+.videText{
+  margin-top: -100px;
+  margin-left: 170px;
+}
+.videoblogcardimg{
+  width: 600px;
+  height: 700px;
+  display: flex;
+  justify-content: space-between;
+  background-image: url(./imgs/blog8.webp);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  margin-left: 200px;
+  box-shadow: 10px 10px 10px 10px rgba(88, 61, 36, 0.837);
+
+
+}
+.videoblogcard{
+  display: flex;
+  justify-content: space-evenly;
+}
+.videoblogcardArticle{
+  padding: 20px;
+  width: 500px;
+  
 }
 .rotSpan{
   display: inline-block;
   margin-top: 20px;
+  margin-bottom: 20px;
   padding: 20px;
   transform:rotate(90deg);
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 

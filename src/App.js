@@ -5,8 +5,7 @@ import { instance } from "./application";
 import { Header } from "./components/header";
 import {RoutesComponent  } from "./Routes";
 import './App.css';
-// import { CarouselItem,Carousel } from "./application/Carousel.js";
-// import { Unstable_Grid2 } from "@mui/material";
+
 import { SliderComp } from "./application/Carousel";
 import { HomePage, RegisterPage } from "./pagees";
 import { useDispatch } from "react-redux";
@@ -17,17 +16,18 @@ import { ProductPage } from "./pagees/ProductPage";
 import { RegisterForm } from "./components/register";
 import { HomePageProducts } from "./components/product";
 import { LoginForm } from "./components/login";
-// import { FooterPage } from "./pagees/FooterPage";
-// import 'bootstrap/dist/css/bootstrap.min.css';
+import { FooterPage } from "./pagees/FooterPage";
+
+import 'bootstrap/dist/css/bootstrap.min.css';
+import { Logo } from "./components/header/Logo";
+import { Gallery } from "./components/Gallery";
 
 
 
 
 
 const StyledContentContainer=styled(Box)(() => ({
-//  padding:"20px",
-//  marginLeft:"255px",
-//  marginTop:"70px",
+
  minHeight:"100vh",
 
  
@@ -61,10 +61,14 @@ useEffect(()=>{
 <BlogPage/>
 
 <div className="hmproducts">
+
+<Gallery/>
+<Logo />
  
-<HomePageProducts/>
+
 
 </div>
+<FooterPage/>  
 
 
 

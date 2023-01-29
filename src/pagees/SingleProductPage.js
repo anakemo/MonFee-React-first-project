@@ -46,11 +46,11 @@ return(
  <div className='singlproductpg'>
  
 
- <h1>{singleProduct.name}</h1>
-  <img src={singleProduct.image} alt={`${singleProduct} ${singleProduct.name}`} 
+ <h1>{singleProduct?.name}</h1>
+  <img src={singleProduct?.image} alt={`${singleProduct} ${singleProduct?.name}`} 
  width="700px" height={"700px"} ></img>
- <h2>{singleProduct.description}</h2>
- <h3>{singleProduct.price} GEL</h3>
+ <h2>{singleProduct?.description}</h2>
+ <h3>{singleProduct?.price} GEL</h3>
 
 
 

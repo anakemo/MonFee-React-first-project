@@ -17,5 +17,5 @@ export const getUserInitials=(firstName,lastName)=>{
 }
 
 export const isUserAdmin=(userInfo)=>{
-return userInfo.role.includes("admin");
+return userInfo?.role?.includes("admin");
 };

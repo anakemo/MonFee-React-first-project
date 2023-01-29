@@ -44,7 +44,7 @@ const StyledBadge=styled(Badge)(()=>({
 }))
 
 export const Header = () => {
-  const navigation = [ "PRODUCTS", "BLOG",  "CONTACT", ];
+
   const cartItems=useCartItems();
   const cartItemsQuantity=cartItems.reduce((acc,curr)=>acc+curr.quantity,0);
   const [isCartOpen,setIsCartOpen]=useState(false);
@@ -54,9 +54,8 @@ export const Header = () => {
    
    <StyledAppBar className="appbar">
     <StyledToolbar>
-     
-       {/* <Logo/> */}
-    <ul className="navigation"> {navigation.map((item)=><Link to={`/${item.toLowerCase()}/`} className="navigText" >{item}</Link>)}</ul>
+  
+   <Link  to={`/products/`} className="navigText" > PRODUCTS </Link>
     <Logo/>
     <SearchBar></SearchBar>
     <Button onClick={()=>setIsCartOpen(true)}> 
@@ -65,11 +64,7 @@ export const Header = () => {
            </StyledBadge>
       </Button>
     <UserIcon>
-      {/* <Button> 
-        <Badge badgeContent={10}>
-          <FiShoppingCart size={35}></FiShoppingCart>
-           </Badge>
-      </Button> */}
+     
     </UserIcon>
     <CartDrawer isOpen={isCartOpen} onClose={()=>{ 
       setIsCartOpen(false);

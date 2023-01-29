@@ -15,7 +15,7 @@ export const CategoryProductList = () => {
 
   return (
     <GridComponent>
-     {CategoryProducts.products.map((product)=>{
+     {CategoryProducts.products?.map((product)=>{
 return (
   <Grid item key={product._id}>
 <ProductCard {...product}/>

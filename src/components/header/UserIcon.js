@@ -44,7 +44,7 @@ const onLogIn=()=>{
     setAnchor(e.currentTarget);
 }}>
     <StyledAvatar>
-        {getUserInitials(userInfo.firstName, userInfo.lastName )}
+        {getUserInitials(userInfo?.firstName, userInfo?.lastName )}
         
     </StyledAvatar>
 </IconButton>
