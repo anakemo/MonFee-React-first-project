@@ -35,9 +35,6 @@ const StyledCardTypography=styled(Typography)(()=>({
   flexDirection:"column",
   justifyContent:"space-between" ,
 
-  // backgroundColor:"red",
-  // width:"200px",
-  // height:"200px",
 
 
 }));
@@ -65,7 +62,7 @@ const cartItems=useCartItems();
 const {pathname,search}=useLocation();
 const onRatingChange=(e)=>{
 console.log('e.target.value', e.target.value);
-dispatch(rateProduct({productId:_id,userId:userInfo._id , url:`${category}${search}&size=1`, isHome:pathname==="/", rating:e.target.value,
+dispatch(rateProduct({productId:_id,userId:userInfo._id , url:`${category}${search}&size=1`, isHome:pathname==="/products/", rating:e.target.value,
 })
 );
 };

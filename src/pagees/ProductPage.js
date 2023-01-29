@@ -8,7 +8,7 @@ export const ProductPage = () => {
     const StyledContentContainer=styled(Box)(() => ({
          padding:"20px",
          marginLeft:"255px",
-        //  marginTop:"70px",
+  
          minHeight:"100vh",
         
          
@@ -20,7 +20,7 @@ export const ProductPage = () => {
         <StyledContentContainer>
         <Sidebar></Sidebar>
       <HomePageProducts></HomePageProducts>
-      {/* <ProductCarousel/> */}
+    
         </StyledContentContainer>
     
     </div>

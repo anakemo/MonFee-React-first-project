@@ -6,8 +6,7 @@ import { styled,Box } from '@mui/material';
 export const ProductFormPage = () => {
   const StyledContentContainer=styled(Box)(() => ({
     padding:"100px",
-    
-    // marginTop:"70px",
+  
     minHeight:"90vh",
     backgroundColor:"#424242",
    

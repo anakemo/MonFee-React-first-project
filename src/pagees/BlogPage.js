@@ -1,7 +1,7 @@
 import React from 'react'
 import { Box } from '@mui/material'
-import { BlogVideoComp } from '../components/shared/BlogVideoComp'
-import { width } from '@mui/system'
+
+
 
 import {MdOutlineArrowDownward} from "react-icons/md";
 
