@@ -161,9 +161,9 @@ label="price"
 SetImage(base64)
   }}></FileBase>
   
- <SaveButton onClick={onSaveProduct}>
+ <Button onClick={onSaveProduct}>
     save product
- </SaveButton>
+ </Button>
 </FormControl>
 }
 export default ProductForm;
