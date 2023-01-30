@@ -17,15 +17,15 @@ export const AddProductPage = () => {
    }));
   
 
-   const{
+const{
     formValues:productFormValues,onInputChange,setFormValues}
     =useForm({defaultFormValues : generateAddProductFormValues(),
 }
 )
-useEffect(()=>{
- setFormValues(generateAddProductFormValues({productFormValues})); 
 
-},)
+ setFormValues(generateAddProductFormValues()); 
+
+
 
   
   return (
