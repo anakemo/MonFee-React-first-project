@@ -3,7 +3,7 @@ import { Avatar, IconButton, MenuItem, Menu, Button,  } from '@mui/material'
 import { Box } from '@mui/system'
 import React, { useState } from 'react'
 import { useNavigate } from 'react-router-dom';
-import { logOutUser, useUserInfo } from '../../redux';
+import { logOutUser, setSelectedProduct, useUserInfo } from '../../redux';
 import { getUserInitials } from '../../application/utils';
 import { useDispatch } from 'react-redux';
 import { isUserAdmin } from '../../application/utils';
@@ -68,6 +68,7 @@ const onLogIn=()=>{
 <Button>profile</Button>
 <Button onClick={()=>dispatch(logOutUser())}>logout</Button>
 {isUserAdmin(userInfo) && <Button onClick={() => {
+    dispatch(setSelectedProduct([]));
                           navigate ( "/products/new");
                          
                           
