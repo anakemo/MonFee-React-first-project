@@ -9,6 +9,8 @@ import { addToCart, rateProduct, removeFromCart, setSelectedProduct, useCartItem
 import { isUserAdmin } from '../../application'
 import { Link, useLocation, useNavigate } from 'react-router-dom'
 import { Rating } from './Rating'
+import { generateAddProductFormValues } from './ProductForm'
+import { useForm } from '../../application'
 
 
 const StyledCardContent=styled(Box)(()=>({
@@ -39,7 +41,11 @@ const StyledCardTypography=styled(Typography)(()=>({
 
 }));
 
+
 export const ProductCard = ({name,_id,image,price,category,brand,description,averageRating,}) => {
+  const{formValues:productFormValues,onInputChange,setFormValues}=useForm({defaultFormValues : generateAddProductFormValues(),}
+)
+ 
 
 const cartItems=useCartItems();
   const dispatch=useDispatch();
@@ -47,7 +53,9 @@ const cartItems=useCartItems();
   const userInfo=useUserInfo();
   const isProductInCart=cartItems.find((item)=>item.product._id===_id);
   const onEdit=()=>{
-    dispatch(setSelectedProduct({product:{
+    
+    dispatch(
+      setSelectedProduct({product:{
       name,
       _id,
       image,
@@ -58,6 +66,8 @@ const cartItems=useCartItems();
       
     }}))
     navigate(`/products/edit/${name}`)
+    
+  
   }
 const {pathname,search}=useLocation();
 const onRatingChange=(e)=>{

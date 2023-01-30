@@ -6,7 +6,6 @@ import { useDispatch } from 'react-redux'
 import { saveProduct, useSelectedProduct } from '../../redux'
 import FileBase from "react-file-base64"
 import { useNavigate } from 'react-router-dom'
-import { SaveButton } from '../shared/SaveButton'
 
 
 
@@ -16,7 +15,8 @@ import { SaveButton } from '../shared/SaveButton'
 
 
 
- const generateAddProductFormValues=(selectedProduct)=>{
+
+export  const generateAddProductFormValues=(selectedProduct)=>{
    
     return{
         name:{
@@ -60,27 +60,18 @@ import { SaveButton } from '../shared/SaveButton'
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
  const ProductForm = () => {
-    const{formValues:productFormValues,onInputChange,setFormValues}=useForm({defaultFormValues : generateAddProductFormValues(),}
+    const{
+        formValues:productFormValues,onInputChange,setFormValues}
+        =useForm({defaultFormValues : generateAddProductFormValues(),}
     )
-    const dispatch=useDispatch();
-    const navigate=useNavigate();
     const selectedProduct=useSelectedProduct();
     const [image,SetImage]=useState("");
+    const dispatch=useDispatch();
+    const navigate=useNavigate();
+   
     const onSaveProduct=()=>{
+       
         const name=productFormValues.name.value;
         const description=productFormValues.description.value;
         const brand=productFormValues.brand.value;
@@ -109,7 +100,8 @@ useEffect(()=>{
         setFormValues(generateAddProductFormValues(selectedProduct));
         SetImage(selectedProduct.image);
     }
-},[selectedProduct]);
+},[selectedProduct,setFormValues]);
+
 
 
 

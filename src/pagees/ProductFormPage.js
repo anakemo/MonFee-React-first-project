@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import ProductForm from '../components/product/ProductForm'
 import { styled,Box } from '@mui/material';
 
@@ -12,6 +12,7 @@ export const ProductFormPage = () => {
    
     
    }));
+  
   return (
     <div >
 <StyledContentContainer>

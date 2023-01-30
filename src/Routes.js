@@ -11,6 +11,7 @@ import { ProductPage } from './pagees/ProductPage';
 import { BlogPage } from './pagees/BlogPage';
 import { FooterPage } from './pagees/FooterPage';
 import { useNavigate } from 'react-router-dom';
+import { AddProductPage } from './pagees/AddProductPage';
 
 
 
@@ -30,7 +31,7 @@ export const RoutesComponent = () => {
         <Route path="/register" element={<RegisterPage/>} />
         <Route path="/login" element={<LoginPage/>} />
         <Route path="/products/new" element={<ProtectedRoute hasAccess={isUserAdmin(userInfo)}>
-            <ProductFormPage/>
+            <AddProductPage/>
           </ProtectedRoute>}>
 
           </Route>
